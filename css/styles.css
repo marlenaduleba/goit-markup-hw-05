@@ -192,40 +192,6 @@ body {
 }
 
 /* *********MAIN ********************/
-.backdrop{
-  cursor: not-allowed;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: fixed;
-  left: 0; right: 0; top: 0; bottom: 0;
-  }
-
-.modal-box{
-  box-sizing: border-box;
-  width: 528px;
-  height: 581px;
-  border-radius: 4px;
-  background-color:var(--white);
-  cursor: initial;
-margin: auto;
-position: absolute;
-top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-.modal-icon{
-  width: 30px;
-  height: 30px;
-  stroke: rgba(0, 0, 0, 0.1);
-  position:absolute;
-  top:8px;
-  right: 8px;
-}
-
 .block-main {
   background-color: var(--background-black);
 }
@@ -643,4 +609,50 @@ overflow: hidden;
   margin-bottom: 20px;
   color: var(--white);
   text-transform: uppercase;
+}
+
+/*** MODAL WINDOW *************************************/
+
+.backdrop{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0; right: 0; top: 0; bottom: 0;
+  }
+
+.modal-box{
+  box-sizing: border-box;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background-color:var(--white);
+  cursor: initial;
+margin: auto;
+position: absolute;
+top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.close-button{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  top:8px;
+  right: 8px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+background-color: var(--white);
+}
+
+.close-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
 }
