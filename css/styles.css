@@ -4,6 +4,7 @@
   --blue: #2196f3;
   --white: #ffffff;
   --icon-gray: #afb1b8;
+  --icon-black: #000;
   --white-transparent: rgba(255, 255, 255, 0.6);
   --background-black: #2f303a;
   --background-white: #f5f4fa;
@@ -81,6 +82,7 @@ body {
   color: var(--white);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 /* *********   HEADER  ********************/
 .navigation-links {
@@ -190,6 +192,31 @@ body {
 }
 
 /* *********MAIN ********************/
+.backdrop{
+  cursor: not-allowed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0; right: 0; top: 0; bottom: 0;
+  }
+
+.modal-box{
+  box-sizing: border-box;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background-color:var(--white);
+  cursor: initial;
+margin: auto;
+position: absolute;
+top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+}
 
 .block-main {
   background-color: var(--background-black);
@@ -503,6 +530,33 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
+
+.no-overlay{
+position: relative;
+overflow: hidden;
+}
+
+.no-overlay:hover .overlay{
+  transform: translateY(0);
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+}
+
+.overlay > p {
+  color: var(--white);
+  padding: 49px 45px 49px 24px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;}
 
 .project-title {
   font-weight: 700;
