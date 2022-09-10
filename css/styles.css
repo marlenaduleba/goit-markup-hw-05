@@ -5,6 +5,7 @@
   --black: #212121;
   --blue: #2196f3;
   --white: #ffffff;
+  --icon-gray: #afb1b8;
   --white-transparent: rgba(255, 255, 255, 0.6);
   --background-black: #2f303a;
   --background-white: #f5f4fa;
@@ -71,12 +72,15 @@ body {
   color: var(--blue);
   text-decoration: none;
   margin-right: 93px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-link-dark-theme {
   color: var(--black);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-link-light-theme {
   color: var(--white);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* *********   HEADER  ********************/
@@ -89,6 +93,7 @@ body {
   text-decoration: none;
   display: block;
   margin-right: 46px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-links-active {
@@ -97,6 +102,7 @@ body {
   line-height: 1.142;
   color: var(--blue);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-links-top {
@@ -105,6 +111,7 @@ body {
   line-height: 1.142;
   color: var(--gray);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .left-icon,
@@ -206,6 +213,7 @@ body {
   color: var(--white);
   background-color: var(--blue);
   border-style: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-descriptions-list {
@@ -327,14 +335,17 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--white);
+  color: var(--icon-gray);
+  fill: var(--icon-gray);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-item:hover,
 .social-links-item:focus {
   cursor: pointer;
   background-color: var(--blue);
-  --color3: currentColor;
+ color: var(--white);
+ fill: var(--white);
 }
 
 .social-icon {
@@ -347,7 +358,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  color: var(--blue);
 }
 .brand-item {
   display: flex;
@@ -355,8 +365,11 @@ body {
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-gray);
   border-radius: 4px;
+  color: var(--icon-gray);
+  fill: var(--icon-gray);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .brand-icon {
@@ -368,7 +381,8 @@ body {
 .brand-item:focus {
   cursor: pointer;
   border: 1px solid var(--blue);
-  --color3: currentColor;
+  color: var(--blue);
+  fill: var(--blue);
 }
 
 /************* PORTFOLIO ***************/
@@ -389,6 +403,7 @@ body {
   border-radius: 4px;
   padding: 6px 22px;
   border-style: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters-list-item:not(:last-child) {
@@ -424,6 +439,10 @@ body {
 
 .images-list .figure {
   flex-basis: calc((100%-60px) / 3);
+}
+
+.images-list-item .figure{
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .images-list-item .figure:hover,
@@ -486,6 +505,7 @@ body {
   text-decoration: none;
   color: var(--white-transparent);
   margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social {
@@ -502,7 +522,9 @@ body {
 
 .page-bottom .social-links-item {
   background-color: rgba(255, 255, 255, 0.1);
-  --color3: currentColor;
+  color: var(--white);
+  fill: var(--white);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-bottom .social-links-item:hover,
