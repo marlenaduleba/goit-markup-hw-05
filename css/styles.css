@@ -83,8 +83,7 @@ body {
 }
 
 /* *********   HEADER  ********************/
-.navigation-links,
-.navigation-links-active {
+.navigation-links {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -93,19 +92,10 @@ body {
   display: block;
   margin-right: 46px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navigation-links-active {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  color: var(--blue);
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
-.navigation-links-active::after{
+.navigation-links:hover::after{
   display: block;
   content: "";
   width: 100%;
@@ -114,9 +104,27 @@ body {
   border-radius: 2px;
   position: absolute;
   bottom: -32px;
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.active {
+  color: var(--blue);
+  position: relative;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active::after
+{
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: var(--blue);
+  border-radius: 2px;
+  position: absolute;
+  bottom: -32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .contacts-links-top {
   font-weight: 500;
