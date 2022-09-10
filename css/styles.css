@@ -1,6 +1,4 @@
 :root {
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Raleway", sans-serif;
   --gray: #757575;
   --black: #212121;
   --blue: #2196f3;
@@ -41,9 +39,10 @@ img {
   padding-bottom: 94px;
 }
 body {
-  font-family: var(--font-primary);
+  font-family: "Roboto", "Raleway", sans-serif;
   color: var(--gray);
   margin: 0;
+  letter-spacing: 0.03em;
 }
 .logo-link:hover .logo-link-dark-theme,
 .logo-link:focus .logo-link-dark-theme,
@@ -66,7 +65,7 @@ body {
 }
 
 .logo-link {
-  font-family: var(--font-secondary);
+  font-family: "Raleway";
   font-size: 26px;
   line-height: 1.192;
   color: var(--blue);
@@ -245,7 +244,7 @@ body {
 }
 
 .list-title {
-  font-family: var(--font-primary);
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
@@ -273,6 +272,30 @@ body {
 .section-images-list {
   display: flex;
   justify-content: space-between;
+}
+
+.thumb{
+  position: relative;
+}
+
+.label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  text-transform: uppercase;
+  color: var(--white);
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  z-index: 1;}
+
+  .thumb > .label{
+  position: absolute;
+  bottom: 0;
 }
 
 .section-gray {
@@ -394,7 +417,7 @@ body {
 }
 
 .button-filter {
-  font-family: var(--font-primary);
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
