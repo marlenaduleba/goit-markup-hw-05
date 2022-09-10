@@ -215,7 +215,15 @@ top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+}
 
+.modal-icon{
+  width: 30px;
+  height: 30px;
+  stroke: rgba(0, 0, 0, 0.1);
+  position:absolute;
+  top:8px;
+  right: 8px;
 }
 
 .block-main {
