@@ -284,6 +284,7 @@ body {
 .section-images-list {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .thumb {
@@ -318,6 +319,7 @@ body {
 .section-gray-list {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .section-gray-list-item {
